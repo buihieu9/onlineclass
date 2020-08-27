@@ -1,0 +1,94 @@
+.container .signup-content {
+  background: #ffffff;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.container .signup-content .row {
+  display: flex;
+  padding: 67px 0;
+}
+
+.container .signup-content .signup-form {
+  flex-grow: 3;
+}
+
+.signup-form {
+  margin: 0 80px 0 90px;
+}
+.signup-img {
+  margin: 45px 70px 0 55px;
+}
+
+.signup-img img {
+  margin-bottom: 50px;
+}
+
+.signup-img .redirect-to-signin {
+  text-align: center;
+  text-decoration: underline #999999;
+  margin: 0;
+  /* font-size: 18px; */
+  transition: 0.5s;
+}
+.signup-img .redirect-to-signin:hover {
+  color: #6dabe4;
+  text-decoration: underline #559ada;
+}
+.signup-form .signup-heading {
+  font-size: 40px;
+  margin-bottom: 33px;
+}
+
+#register-form .input-name-wrapper .input-yourname {
+  display: flex;
+}
+
+.form-action .form-check-job {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-action .btn {
+  margin-top: 25px;
+}
+
+.input-yourname .input-wrapper input {
+  width: 95%;
+}
+#check-job {
+  bottom: 49px;
+  right: 25px;
+}
+
+.form-action .form-check-job .column {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.column input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.column input[type="radio"]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f00c";
+  font-size: 13px;
+  display: none;
+}
+
+.column input[type="radio"]:checked:after {
+  display: block;
+}

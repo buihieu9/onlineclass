@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="signin-content">
+        <div class="row">
+          <div class="signin-img">
+            <img src="./img/signin-image.jpg" />
+            <div class="redirect-to-resgister cursor-pointer">
+              Create an account
+            </div>
+          </div>
+
+          <div class="signin-form">
+            <h2 class="signin-heading">Sign In</h2>
+
+            <form id="login-form">
+              <div class="input-name-wrapper">
+                <div class="input-wrapper">
+                  <label for="input-email"> <i class="fas fa-user"></i></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="input-email"
+                    placeholder="Email"
+                  />
+                  <div class="error" id="email-error"></div>
+                </div>
+                <div class="input-wrapper">
+                  <label for="input-password">
+                    <i class="fas fa-lock"></i>
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="input-password"
+                    placeholder="Password"
+                  />
+                  <div class="error" id="password-error"></div>
+                </div>
+              </div>
+              <div class="form-action">
+                <div class="form-remember">
+                  <input type="checkbox" name="remember" id="remember-me" />
+                  <label for="remember-me" class="cursor-pointer"
+                    >Remember Me</label
+                  >
+                  <div id="forgot-password">Forgot password ?</div>
+                </div>
+                <button class="btn" type="submit">Log in</button>
+              </div>
+            </form>
+
+            <div class="login-social-media">
+              <span>Or login with</span>
+              <i class="fab fa-facebook-square cursor-pointer"></i>
+              <i class="fab fa-google-plus-square cursor-pointer"></i>
+              <i class="fab fa-twitter-square cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/register.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="signup-content">
+      <div class="row">
+        <div class="signup-form">
+          <h2 class="signup-heading">Sign Up</h2>
+          <form id="register-form">
+            <div class="input-name-wrapper">
+             <div class="input-yourname">
+                  <div class="input-wrapper">
+                    <label for="input-first-name"><i class="fas fa-user"></i></label>
+                    <input type="text" name="firstName" placeholder="First Name" id="input-first-name" />
+                    <div class="error" id="first-name-error"></div>
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="input-last-name"><i class="fas fa-user"></i></label>
+                    <input type="text" name="lastName" placeholder="last Name" id="input-last-name" />
+                    <div class="error" id="last-name-error"></div>
+                  </div>
+             </div>
+
+              <div class="input-wrapper">
+                <label for="input-email"> <i class="fas fa-envelope"></i></label>
+                <input type="email" name="email" id="input-email" placeholder="Email" />
+                <div class="error" id="email-error"></div>
+              </div>
+              <div class="input-wrapper">
+                <label for="input-password">
+                  <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" name="password" id="input-password" placeholder="Password" />
+                <div class="error" id="password-error"></div>
+              </div>
+              <div class="input-wrapper">
+                <label for="input-comfirm-password">
+                  <i class="fas fa-lock"></i>
+                </label>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="confirmPassword"
+                  id="input-comfirm-password"
+                />
+                <div class="error" id="confirm-password-error">aaaaaaaaaaaa</div>
+              </div>
+            </div>
+            <div class="form-action">
+              <div class="form-check-job">
+               <div class="column">
+                <input type="radio" name="job" value="teacher" id="teacher"  />
+                <label for="teacher" class="cursor-pointer">Teacher</label>
+               </div>
+               <div class="column">
+                <input type="radio" name="job" value="student" id="student"/>
+                <label for="student" class="cursor-pointer">Student</label>
+              </div>
+              <div class="error" id="check-job">please checked job</div>
+             </div>
+              <button class="btn" type="submit">
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="signup-img">
+          <img src="./img/signup-image.jpg" />
+          <div class="redirect-to-signin cursor-pointer">
+            I am already member
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>

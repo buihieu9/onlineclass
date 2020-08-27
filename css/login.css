@@ -1,0 +1,145 @@
+.container .signin-content {
+  background: #ffffff;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.container .signin-content .row {
+  display: flex;
+  padding: 67px 0;
+}
+
+/* .container .signin-content .signin-img {
+  flex-grow: 1;
+} */
+
+.container .signin-content .signin-form {
+  flex-grow: 3;
+}
+
+.signin-form {
+  margin: 0 80px 0 90px;
+}
+.signin-img {
+  margin: 10px 20px 0 110px;
+}
+
+.signin-img img {
+  margin-bottom: 50px;
+}
+
+.signin-img .redirect-to-resgister {
+  text-align: center;
+  text-decoration: underline #999999;
+  margin: 0;
+  transition: 0.5s;
+  /* font-size: 18px; */
+}
+.signin-img .redirect-to-resgister:hover {
+  color: #6dabe4;
+  text-decoration: underline #559ada;
+}
+.signin-form .signin-heading {
+  font-size: 40px;
+  margin-bottom: 33px;
+}
+
+#all-error {
+  position: absolute;
+  bottom: 95px;
+  color: red;
+  font-size: 13px;
+}
+/* .input-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+} */
+
+.form-remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-action {
+  position: relative;
+}
+
+.form-action #forgot-password {
+  /* position: absolute;
+  top: 0;
+  right: 0px;
+  transition: 0.5s; */
+  margin-left: 43px;
+}
+.form-action #forgot-password:hover {
+  color: #6dabe4;
+}
+
+.form-remember input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 10px; */
+}
+
+.form-remember input[type="checkbox"]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f00c";
+  font-size: 13px;
+  display: none;
+}
+.form-remember input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+.form-action .form-remember label {
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.form-action .form-remember label:hover {
+  color: #6dabe4;
+}
+.login-social-media {
+  margin-top: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.login-social-media span {
+  margin-right: 15px;
+}
+.login-social-media .fab {
+  font-size: 30px;
+  margin: 0px 5px;
+}
+
+.login-social-media .fa-facebook-square {
+  color: #2d76b9;
+}
+
+.login-social-media .fa-google-plus-square {
+  color: #da0707;
+}
+
+.login-social-media .fa-twitter-square {
+  color: #3c93e4;
+}
+.login-social-media .fab {
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.login-social-media .fab:hover {
+  transform: scale(1.5);
+}

@@ -1,0 +1,60 @@
+.container .forgot-content {
+  background: #ffffff;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.container .forgot-content .row {
+  display: flex;
+  padding: 67px 0;
+}
+
+.container .forgot-content .forgot-form {
+  flex-grow: 3;
+}
+
+.forgot-form {
+  margin: 0 80px 0 80px;
+}
+
+.forgot-form .title-heading .forgot-heading {
+  font-size: 35px;
+  margin-bottom: 25px;
+  color: #333;
+}
+.forgot-form .title-heading p {
+  margin-bottom: 30px;
+  color: #333;
+}
+.forgot-img {
+  margin: 10px 20px 0 110px;
+}
+
+.forgot-img img {
+  margin-bottom: 50px;
+}
+
+#forgot-form .form-action {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#forgot-form .form-action .reset-password {
+  margin-right: 10px;
+}
+
+#forgot-form .form-action .cancel {
+  background: #f05050;
+  padding: 0;
+  padding: 15px 34px;
+  transition: 0.5s;
+}
+
+#forgot-form .form-action .cancel:hover {
+  background: #b42525;
+}
+
+#forgot-error {
+  bottom: -45px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/forgot.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forgot-content">
+        <div class="row">
+          <div class="forgot-img">
+            <img src="./img/signin-image.jpg" alt="" />
+          </div>
+          <div class="forgot-form">
+            <div class="title-heading">
+              <h2 class="forgot-heading">Forget Password</h2>
+              <p>
+                Please enter your email address below and we will send you
+                information to recover your account.
+              </p>
+            </div>
+            <form id="forgot-form">
+              <div class="input-name-wrapper">
+                <div class="input-wrapper">
+                  <label for="input-email"> <i class="fas fa-envelope"></i></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="input-email"
+                    placeholder="Email"
+                  />
+                  <div class="error" id="email-error"></div>
+                </div>
+                <div class="form-action">
+                  <button class="btn reset-password" type="submit">Send </button>
+                  <button class="btn cancel" type="click">Cancel</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
