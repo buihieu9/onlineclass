@@ -9,15 +9,15 @@ model.register = (data) => {
         .auth()
         .currentUser.updateProfile({
           displayName: data.lastName.value + " " + data.firstName.value,
-          photoURL:
-            "https://firebasestorage.googleapis.com/v0/b/chat-app-bc2a8.appspot.com/o/user.png?alt=media&token=28e24cc2-86bd-43f8-aa54-2a62ef76650a",
         })
         .then(() => {
           model.addFireStore("users", {
             name: res.user.displayName,
             email: res.user.email,
-            job: data.job.value,
+            isTeacher: data.job.value,
             password: data.password.value,
+            photoURL:
+              "https://firebasestorage.googleapis.com/v0/b/chat-app-bc2a8.appspot.com/o/user.png?alt=media&token=28e24cc2-86bd-43f8-aa54-2a62ef76650a",
           });
         });
       firebase.auth().currentUser.sendEmailVerification();
