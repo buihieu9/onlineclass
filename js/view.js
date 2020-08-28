@@ -5,7 +5,12 @@ view.setActiveScreen = (screenName) => {
     case "signInScreen": {
       document.getElementById("app").innerHTML = components.signInScreen;
       const loginForm = document.getElementById("login-form");
-
+      let checkRemember = loginForm.remember.checked;
+      if (JSON.parse(localStorage.getItem("checkRemember"))) {
+        loginForm.remember.checked = true;
+      } else {
+        loginForm.remember.checked = false;
+      }
       loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const data = {
@@ -25,7 +30,28 @@ view.setActiveScreen = (screenName) => {
           : (controller.checkRemember = false);
 
         controller.validate(data);
+        const dataRemember = {
+          email: loginForm.email.value,
+          password: loginForm.password.value,
+        };
+        if (loginForm.remember.checked) {
+          localStorage.setItem("dataRemember", JSON.stringify(dataRemember));
+          localStorage.setItem("checkRemember", JSON.stringify(checkRemember));
+        } else {
+          localStorage.setItem("checkRemember", JSON.stringify(checkRemember));
+        }
       });
+      if (JSON.parse(localStorage.getItem("checkRemember"))) {
+        loginForm.email.value = JSON.parse(
+          localStorage.getItem("dataRemember")
+        ).email;
+        loginForm.password.value = JSON.parse(
+          localStorage.getItem("dataRemember")
+        ).password;
+      } else {
+        loginForm.email.value = "";
+        loginForm.password.value = "";
+      }
 
       document
         .querySelector(".redirect-to-resgister")
@@ -38,8 +64,12 @@ view.setActiveScreen = (screenName) => {
         .addEventListener("click", () => {
           view.setActiveScreen("forgotScreen");
         });
+
       document.getElementById("facebook").addEventListener("click", (e) => {
         model.signinFacebook();
+      });
+      document.getElementById("remember-me").addEventListener("click", (e) => {
+        checkRemember = loginForm.remember.checked;
       });
 
       break;
@@ -97,6 +127,10 @@ view.setActiveScreen = (screenName) => {
 
     case "classRoom": {
       document.getElementById("app").innerHTML = components.classRoom;
+      document.getElementById("btn-signout").addEventListener("click", () => {
+        firebase.auth().signOut();
+      });
+
       break;
     }
     case "forgotScreen": {

@@ -16,23 +16,24 @@ components.signInScreen = ` <div class="container">
       <form id="login-form">
         <div class="input-name-wrapper">
           <div class="input-wrapper">
-            <label for="input-email"> <i class="fas fa-user"></i></label>
+            <label for="input-signin-email"> <i class="fas fa-user"></i></label>
             <input
               type="email"
               name="email"
-              id="input-email"
+              id="input-signin-email"
               placeholder="Email"
+              value=""
             />
             <div class="error" id="email-error"></div>
           </div>
           <div class="input-wrapper">
-            <label for="input-password">
+            <label for="input-signin-password">
               <i class="fas fa-lock"></i>
             </label>
             <input
               type="password"
               name="password"
-              id="input-password"
+              id="input-signin-password"
               placeholder="Password"
             />
             <div class="error" id="password-error"></div>
@@ -142,6 +143,7 @@ components.signUpScreen = ` <div class="container">
 
 components.classRoom = `
 <h1> hello</h1>
+<button class="btn" id="btn-signout">SignOut</button>
 `;
 
 components.forgotScreen = ` <div class="container">

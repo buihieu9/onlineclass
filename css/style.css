@@ -50,7 +50,7 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
-.form-action .btn {
+.btn {
   display: inline-block;
   background: #6dabe4;
   color: #fff;
@@ -63,8 +63,7 @@ body {
   margin-top: 16px;
   transition: 0.5s;
 }
-
-.form-action .btn:hover {
+.btn:hover {
   background: #2a7dca;
 }
 
