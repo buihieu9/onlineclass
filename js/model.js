@@ -73,18 +73,20 @@ model.forgotPassword = (data) => {
 
 model.signinFacebook = () => {
   const provider = new firebase.auth.FacebookAuthProvider();
+  provider.addScope("user_birthday");
   firebase
     .auth()
     .signInWithPopup(provider)
     .then(function (result) {
-      console.log(result);
       // This gives you a Facebook Access Token. You can use it to access the Facebook API.
       var token = result.credential.accessToken;
       console.log(token);
       // The signed-in user info.
       var user = result.user;
       console.log(user);
-      // ...
+      // view.setActiveScreen("classRoom");
+
+      // ..
     })
     .catch(function (error) {
       // Handle Errors here.
@@ -97,4 +99,14 @@ model.signinFacebook = () => {
       var credential = error.credential;
       // ...
     });
+};
+
+getDataFormDoc = (doc) => {
+  const data = doc.data();
+  data.id = doc.id;
+  return data;
+};
+
+getDataFormDocs = (docs) => {
+  return docs.map((element) => getDataFormDoc(element));
 };

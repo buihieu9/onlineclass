@@ -11,6 +11,7 @@ const init = () => {
   firebase.initializeApp(firebaseConfig);
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      console.log(user);
       if (user.emailVerified) {
         view.setActiveScreen("classRoom");
       } else {
