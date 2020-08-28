@@ -117,11 +117,11 @@ components.signUpScreen = ` <div class="container">
         <div class="form-action">
           <div class="form-check-job">
            <div class="column">
-            <input type="radio" name="job" value="teacher" id="teacher"  />
+            <input type="radio" name="job" value="true" id="teacher"  />
             <label for="teacher" class="cursor-pointer">Teacher</label>
            </div>
            <div class="column">
-            <input type="radio" name="job" value="student" id="student"/>
+            <input type="radio" name="job" value="false" id="student"/>
             <label for="student" class="cursor-pointer">Student</label>
            </div>
            <div class="error" id="check-job"></div>
