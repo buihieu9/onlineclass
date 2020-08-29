@@ -93,6 +93,7 @@ components.signUpScreen = ` <div class="container">
             <label for="input-email"> <i class="fas fa-envelope"></i></label>
             <input type="email" name="email" id="input-email" placeholder="Email" />
             <div class="error" id="email-error"></div>
+            <div id="signup-all-error"></div>
           </div>
           <div class="input-wrapper">
             <label for="input-password">

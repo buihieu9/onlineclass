@@ -48,6 +48,12 @@
   display: flex;
   justify-content: space-between;
 }
+#signup-all-error {
+  position: absolute;
+  bottom: 95px;
+  color: red;
+  font-size: 13px;
+}
 
 .form-action .btn {
   margin-top: 25px;

@@ -25,7 +25,7 @@ model.register = (data) => {
       view.setActiveScreen("signInScreen");
     })
     .catch(function (error) {
-      console.log(error);
+      view.errorMessage("signup-all-error", error.message);
     });
 };
 
